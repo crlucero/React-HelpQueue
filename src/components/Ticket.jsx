@@ -2,18 +2,18 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 function Ticket(props) {
-    var styledCompStyles = {
-        borderStyle: 'solid',
-        fontFamily: 'sans-serif',
-        paddingTop: '50px'
-    }
-  return (
-    <div style={styledCompStyles}>
-      <h3>{props.location} - {props.names}</h3>
-      <p><em>{props.issue}</em></p>
-      <hr />
-    </div>
-  );
+    return (
+        <div>
+            <style jsx>{`
+          div {
+            background-color: blue;
+          }
+        `}</style>
+            <h3>{props.location} - {props.names}</h3>
+            <p><em>{props.issue}</em></p>
+            <hr />
+        </div>
+    );
 }
 
 Ticket.propTypes = {
@@ -22,4 +22,4 @@ Ticket.propTypes = {
   issue: PropTypes.string
 }
 
-export default Ticket;
+export default Ticket

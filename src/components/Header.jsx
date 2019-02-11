@@ -1,9 +1,12 @@
-import React from 'react';
+import React from 'react'
 
 function Header() {
-    return (
-        <h1>Help Queue</h1>
-    );
+    var styledHeader = {
+        backgroundColor: 'blue'
+    }
+  return (
+    <h1 style={styledHeader}>Help Queue</h1>
+  )
 }
 
-export default Header;
+export default Header

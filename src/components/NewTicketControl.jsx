@@ -13,7 +13,8 @@ class NewTicketControl extends React.Component {
         this.handleTroubleShoot = this.handleTroubleShoot.bind(this) 
     }
     handleTroubleShoot(){
-        this.setState({formVisibleOnPage: true}); 
+        this.state = { test: 'hey' };
+        this.setState({formVisibleOnPage: true});
     }
 
     render() {
